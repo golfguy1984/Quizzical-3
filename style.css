@@ -27,11 +27,17 @@ button {
 }
  
 .main-container {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 600px;
     border-radius: 60px;
-    margin: 100px auto;
-    background-color: whitesmoke
+    margin: auto;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
 } 
 
 .main-container-questions {
@@ -48,6 +54,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 
