@@ -14,9 +14,9 @@ const [inputsValue, setInputsValue] = useState(
                 })
 
 // this function is called when the button is clicked and calls the get questions function
-async function handleClick() {
-  await getQuestions()
-}
+// async function handleClick() {
+//   await getQuestions()
+// }
 
 // fetches the questions - sets questions state and displays the quiz page
 async function getQuestions() {
@@ -42,7 +42,7 @@ function handleChange(id, value) { //takes in question index and selected answer
   return (
     <div className={start ? "main-container-questions" : "main-container"}>
       {!start && <Start 
-                      handleClick={handleClick}
+                      handleClick={getQuestions}
                       handleChange={handleChange}
                       inputsValue={inputsValue}
                       />}

@@ -15,7 +15,7 @@ const [shuffled, setShuffled] = useState([])
 const [reset, setReset] = useState(false)
 
 
-
+console.log(shuffled)
 
 
 
